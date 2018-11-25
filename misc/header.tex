@@ -1,0 +1,39 @@
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{graphicx}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\usepackage{listings}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\lstset{%
+basicstyle=\ttfamily\color{gray},
+% basicstyle=\ttfamily,
+showstringspaces=false,
+breaklines = true,
+frame=single, 
+numbers=left,
+numberstyle=\tiny\color{mygray}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{0.35in}
+\let\MakeUppercase\relax
+\PassOptionsToPackage{colorlinks = true,
+    linkcolor = blue,
+    urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue}{hyperref}
+\frenchspacing
+
+
+
+
+\pretitle{%
+  \begin{center}
+  \LARGE
+  \vspace*{-4.5cm}\includegraphics[width=1\textwidth]{"./misc/logo_unive_2000x2000"}\\[\bigskipamount]
+  \leavevmode \newline \newline \newline
+}
+
+\posttitle{\end{center}}
+\clearpage

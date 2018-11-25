@@ -1,0 +1,9 @@
+.vscode/
+*.exe
+*.o
+*.out
+.idea/
+cmake-build-debug/
+CMakeLists.txt
+doc/
+Report.pdf
