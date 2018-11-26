@@ -51,7 +51,7 @@ While developing this project, I had to make some assumptions. The first and str
 
 Another assumption I had to make (and tried to enforce using `assert`) is that users will try to do legit operations, i.e. no *out of range* operations, wrongly called constructors and similar.
 
-I also had to assume that there exists a default constructor for any data type that will be used as content of the matrix. This is not a strong assumption, but still requires quite some attention especially when dealing with custom data types;
+I also had to assume that there exists a constructor that accepts `0` as a parameter for any data type that will be used as content of the matrix. This is quite a strong assumption, and requires some attention especially when dealing with different data types;
 
 
 ## Design patterns

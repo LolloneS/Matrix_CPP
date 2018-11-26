@@ -746,7 +746,7 @@ public:
         @param other matrix to be used to create the new one
     */
     matrix(const matrix<T, decorator_matrix> &other) :
-            matrix<T, decorator_matrix>(other), null_element() {
+            matrix<T, decorator_matrix>(other), null_element(0) {
         assert((other.get_cols() == 1) && "Invalid matrix!");
     }
 

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include "matrix.h" 
 
 
@@ -154,11 +153,6 @@ void basic_test_diagonalmatrix() {
             std::cout << std::endl;
         }
     }
-    matrix<std::string> k(8, 1);
-    for (unsigned int i = 0; i < k.get_rows(); i++)
-        for (unsigned int j = 0; j < k.get_cols(); j++)
-            k(i, j) = std::to_string(i + j);
-    std::cout << std::endl << "k.get_diagonalmatrix()" << std::endl << k.get_diagonalmatrix() << std::endl;
     std::cout << "**************************" << std::endl;
 
 }
