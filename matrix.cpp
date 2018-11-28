@@ -67,18 +67,31 @@ void basic_test_transpose_matrix() {
         }
         std::cout << std::endl;
     }
-    std::cout << std::endl <<  "c by column" << std::endl;
+    std::cout << std::endl <<  "c by column (reverse)" << std::endl;
     auto col_begin = c.column_begin();
     auto col_end = c.column_end();
     unsigned int k = 0;
-    for (; col_begin != col_end; ++col_begin) {
+    col_end--;
+    do {
         k++;
-        std::cout << *col_begin << " ";
+        std::cout << *col_end << " ";
         if (k == c.get_rows()) {
             k = 0;
             std::cout << std::endl;
         }
-    }
+    } while(col_end-- != col_begin);
+
+    // for (; col_begin != col_end; ++col_begin) {
+    //     k++;
+    //     std::cout << *col_begin << " ";
+    //     if (k == c.get_rows()) {
+    //         k = 0;
+    //         std::cout << std::endl;
+    //     }
+    // }
+
+
+
     std::cout << "**************************" << std::endl << std::endl;
 }
 
